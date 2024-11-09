@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export const dbConnection = () => {
   mongoose
-    .connect(mongodb+srv:hamoon:123231213@cluster1.y9abtdr.mongodb.net/")
+    .connect("mongodb+srv://hamoon:123231213@cluster1.y9abtdr.mongodb.net/")
     .then(() => {
       console.log("Connected to database!");
     })
